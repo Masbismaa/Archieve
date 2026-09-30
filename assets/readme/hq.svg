@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="88" viewBox="0 0 1200 88">
+  <style>@keyframes blink { 50% { opacity: 0; } } .cur { animation: blink 1s steps(1) infinite; }
+  @keyframes sweep { from { stroke-dashoffset: 2600; } to { stroke-dashoffset: 0; } } .edge { stroke-dasharray: 180 2400; animation: sweep 5s linear infinite; }</style>
+  <rect x=".5" y=".5" width="1199" height="87" fill="#121419" stroke="#3a3a38"/>
+  <rect class="edge" x=".5" y=".5" width="1199" height="87" fill="none" stroke="#c24b43" stroke-width="2"/>
+  <text x="36" y="38" font-family="'JetBrains Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="12" letter-spacing="2" fill="#948e81">HEADQUARTERS · FULL ARCHIVE WITH A WORKING TERMINAL</text>
+  <text x="36" y="64" font-family="'JetBrains Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="17" fill="#ece7dc"><tspan fill="#c24b43">$ </tspan>open https://masbismaa.github.io/Masbismaa</text>
+  <rect class="cur" x="540" y="51" width="9" height="17" fill="#d0703a"/>
+  <text x="1164" y="60" text-anchor="end" font-family="'JetBrains Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="13" letter-spacing="2" fill="#d9cfb8">ENTER  →</text>
+</svg>

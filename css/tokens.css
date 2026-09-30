@@ -1,0 +1,34 @@
+/* Layout: an index rail on the left, one reading column, records set in monospace.
+   One committed look: a dark archive. The tokens are the same whatever the system theme is. */
+:root {
+  color-scheme: dark;
+  --ink-0: #0b0c0f;      /* near-black ground */
+  --ink-1: #121419;      /* charcoal panels */
+  --ink-2: #151b27;      /* dark navy for selected and raised surfaces */
+  --line: rgba(217, 207, 184, .12);
+  --line-strong: rgba(217, 207, 184, .26);
+  --paper: #ece7dc;      /* off-white text */
+  --parchment: #d9cfb8;  /* headings, seals */
+  --muted: #948e81;
+  --crimson: #8e1b24;
+  --red: #c24b43;
+  --ember: #d0703a;      /* energy, used only for "current" and live things */
+  --ok: #9fb49a;
+
+  --display: 'Shippori Mincho B1', 'Hiragino Mincho ProN', 'Yu Mincho', Georgia, serif;
+  --body: 'IBM Plex Sans', 'Segoe UI', system-ui, sans-serif;
+  --mono: 'JetBrains Mono', 'SFMono-Regular', Consolas, monospace;
+
+  --step--1: .8125rem;
+  --step-0: 1rem;
+  --step-1: 1.25rem;
+  --step-2: clamp(1.6rem, 1.2rem + 1.6vw, 2.25rem);
+  --step-3: clamp(2.2rem, 1.4rem + 3.6vw, 4rem);
+
+  --rail: 232px;
+  --measure: 66ch;
+  --gutter: clamp(16px, 4vw, 48px);
+  --ease: cubic-bezier(.2, .7, .2, 1);
+}
+@media (prefers-color-scheme: light) { :root:not([data-theme="dark"]) { color-scheme: dark; } }
+:root[data-theme="light"], :root[data-theme="dark"] { color-scheme: dark; }

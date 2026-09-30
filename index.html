@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Archive 4D-42-50 · Mochammad Bisma Prasetya</title>
+  <meta name="description" content="The working archive of Mochammad Bisma Prasetya, IT Developer at Spindo: techniques, missions, training log and security practice.">
+  <meta name="theme-color" content="#0b0c0f">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@700;800&family=JetBrains+Mono:wght@400;500;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <script type="module" src="js/main.js"></script>
+</head>
+<body>
+  <a class="skip" href="#dossier">Skip to the archive</a>
+
+  <!-- one rough-edged seal, reused by every section header -->
+  <svg width="0" height="0" aria-hidden="true" style="position:absolute">
+    <filter id="ink-edge"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" seed="7"/><feDisplacementMap in="SourceGraphic" scale="3.2"/></filter>
+  </svg>
+
+  <header class="topbar">
+    <a class="topbar-mark" href="#gate">MBP</a>
+    <button class="topbar-id" id="archiveId" type="button" aria-describedby="idHint">ARCHIVE 4D-42-50</button>
+    <span class="topbar-hint" id="idHint" role="status"></span>
+    <button class="topbar-menu" id="menuBtn" type="button" aria-expanded="false" aria-controls="index">Index</button>
+  </header>
+
+  <nav class="index" id="index" aria-label="Archive index">
+    <p class="index-title">Index</p>
+    <ol>
+      <li><a href="#dossier"><span class="index-mark" aria-hidden="true">記</span>Dossier<i class="index-bar"></i></a></li>
+      <li><a href="#techniques"><span class="index-mark" aria-hidden="true">術</span>Techniques<i class="index-bar"></i></a></li>
+      <li><a href="#missions"><span class="index-mark" aria-hidden="true">任</span>Missions<i class="index-bar"></i></a></li>
+      <li><a href="#training"><span class="index-mark" aria-hidden="true">修</span>Training log<i class="index-bar"></i></a></li>
+      <li><a href="#seals"><span class="index-mark" aria-hidden="true">封</span>Sealing arts<i class="index-bar"></i></a></li>
+      <li><a href="#flow"><span class="index-mark" aria-hidden="true">流</span>Chakra flow<i class="index-bar"></i></a></li>
+      <li><a href="#terminal"><span class="index-mark" aria-hidden="true">問</span>Terminal<i class="index-bar"></i></a></li>
+      <li><a href="#signal"><span class="index-mark" aria-hidden="true">信</span>Signal<i class="index-bar"></i></a></li>
+    </ol>
+  </nav>
+
+  <main>
+    <section class="gate" id="gate" aria-labelledby="gateName">
+      <pre class="gate-log" id="gateLog" aria-hidden="true"></pre>
+      <p class="kicker">Personal archive · read access</p>
+      <h1 class="gate-name" id="gateName" data-text="Mochammad Bisma Prasetya">Mochammad Bisma Prasetya</h1>
+      <p class="gate-line" id="gateLine"></p>
+      <dl class="ledger" id="ledger"></dl>
+      <p class="gate-actions">
+        <a class="action" href="#missions">Open the mission archive</a>
+        <a class="action action--quiet" href="#terminal">Use the terminal</a>
+      </p>
+    </section>
+
+    <section class="chapter" id="dossier" aria-labelledby="h-dossier">
+      <header class="chapter-head" data-no="01" data-mark="記" data-meaning="record">
+        <h2 id="h-dossier">Dossier</h2>
+      </header>
+      <div class="dossier">
+        <div class="prose">
+          <p>I work as an IT Developer at Spindo. I build the internal tools other teams use: an asset inventory, a reporting dashboard, and now an access link register that has to keep secrets from its own administrators.</p>
+          <p>I learn by building the thing. Flask and PostgreSQL started as a practice CRUD app. The same stack now runs ALR, with migrations, tests, and an audit log nobody can edit.</p>
+          <p>Before that: Laravel sites, Flutter apps, and a thesis about stock-keeping for small grocery stores. Three to five years of writing code. Nobody here is pretending it has been ten.</p>
+        </div>
+        <dl class="record" id="record"></dl>
+      </div>
+    </section>
+
+    <section class="chapter" id="techniques" aria-labelledby="h-techniques">
+      <header class="chapter-head" data-no="02" data-mark="術" data-meaning="technique">
+        <h2 id="h-techniques">Techniques</h2>
+      </header>
+      <p class="chapter-note">Tiers are earned by evidence. Select a technique to see what it was used for.</p>
+      <ul class="tiers" id="tiers" aria-label="Tier legend"></ul>
+      <div class="dojo">
+        <div class="schools" id="schools"></div>
+        <aside class="inspector" id="inspector" aria-live="polite" aria-label="Technique inspector"></aside>
+      </div>
+    </section>
+
+    <section class="chapter" id="missions" aria-labelledby="h-missions">
+      <header class="chapter-head" data-no="03" data-mark="任" data-meaning="duty, mission">
+        <h2 id="h-missions">Missions</h2>
+      </header>
+      <p class="chapter-note">Each file opens to its full record. Status on the features is exact: implemented means it runs today.</p>
+      <div class="missions" id="missionList"></div>
+    </section>
+
+    <section class="chapter" id="training" aria-labelledby="h-training">
+      <header class="chapter-head" data-no="04" data-mark="修" data-meaning="practice, discipline">
+        <h2 id="h-training">Training log</h2>
+      </header>
+      <ol class="path" id="path"></ol>
+    </section>
+
+    <section class="chapter" id="seals" aria-labelledby="h-seals">
+      <header class="chapter-head" data-no="05" data-mark="封" data-meaning="seal">
+        <h2 id="h-seals">Sealing arts</h2>
+      </header>
+      <p class="chapter-note">Security here is a written list of what I do when I build, with a status next to each item.</p>
+      <div class="table-wrap"><table class="seals" id="sealTable">
+        <thead><tr><th scope="col">Seal</th><th scope="col">What it covers</th><th scope="col">Where</th><th scope="col">Status</th></tr></thead>
+        <tbody></tbody>
+      </table></div>
+    </section>
+
+    <section class="chapter" id="flow" aria-labelledby="h-flow">
+      <header class="chapter-head" data-no="06" data-mark="流" data-meaning="flow">
+        <h2 id="h-flow">Chakra flow</h2>
+      </header>
+      <p class="chapter-note">Live GitHub activity, regenerated every day by a workflow in this repository. The numbers are GitHub's, not mine.</p>
+      <div class="flow">
+        <figure><img src="https://raw.githubusercontent.com/Masbismaa/Masbismaa/output/chakra.svg" alt="Contribution map for the last twelve months" loading="lazy" width="1100" height="250"><figcaption>Energy map · one cell per day of contributions</figcaption></figure>
+        <figure><img src="https://raw.githubusercontent.com/Masbismaa/Masbismaa/output/stats.svg" alt="Contribution totals: commits, pull requests, issues, repositories" loading="lazy" width="440" height="230"><figcaption>Reserves · totals for the year</figcaption></figure>
+        <figure><img src="https://raw.githubusercontent.com/Masbismaa/Masbismaa/output/langs.svg" alt="Most used languages across public repositories" loading="lazy" width="440" height="230"><figcaption>Techniques by volume of code</figcaption></figure>
+      </div>
+      <p class="fallback" id="flowFallback" hidden>The activity cards appear after the workflow has run once on GitHub. Until then, the live graph is on the <a href="https://github.com/Masbismaa">GitHub profile</a>.</p>
+    </section>
+
+    <section class="chapter" id="terminal" aria-labelledby="h-terminal">
+      <header class="chapter-head" data-no="07" data-mark="問" data-meaning="to ask">
+        <h2 id="h-terminal">Terminal</h2>
+      </header>
+      <p class="chapter-note">The archive answers questions. Start with <kbd>help</kbd>.</p>
+      <div class="term" id="term">
+        <div class="term-bar"><span>archive@4d-42-50</span><span>read-only</span></div>
+        <div class="term-out" id="termOut" role="log" aria-live="polite"></div>
+        <form class="term-in" id="termForm" autocomplete="off">
+          <label for="termInput"><span aria-hidden="true">$</span><span class="sr">Command</span></label>
+          <input id="termInput" type="text" spellcheck="false" autocapitalize="off" enterkeyhint="send">
+        </form>
+      </div>
+    </section>
+
+    <section class="chapter sealed" id="sealed" aria-labelledby="h-sealed" hidden>
+      <header class="chapter-head" data-no="--" data-mark="秘" data-meaning="secret">
+        <h2 id="h-sealed">Field notes</h2>
+      </header>
+      <ul class="notes" id="notes"></ul>
+    </section>
+
+    <footer class="chapter signal" id="signal" aria-labelledby="h-signal">
+      <header class="chapter-head" data-no="08" data-mark="信" data-meaning="message">
+        <h2 id="h-signal">Signal</h2>
+      </header>
+      <dl class="record" id="contact"></dl>
+      <p class="colophon">Hand-built with HTML, CSS and a little JavaScript. No framework, no tracking. <button class="glyph" id="glyph" type="button" aria-label="Archive mark">∴</button></p>
+    </footer>
+  </main>
+</body>
+</html>
